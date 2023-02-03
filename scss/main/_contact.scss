@@ -1,0 +1,87 @@
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+
+#Contact {
+  height: 100vh;
+  @include bg-img(cover, center, no-repeat);
+  background-attachment: fixed;
+  .container {
+    @extend %container;
+    .contact-box {
+      padding-top: 110px;
+      .red-text {
+        @include text-property(18px, $playfair, $red, none);
+        line-height: 24px;
+      }
+      .contact-title {
+        @include text-property(48px, $playfair, $snow, $capit);
+        font-weight: $bold;
+        line-height: 60px;
+        margin: 10px 0 42px 0;
+      }
+      .horizontal-block {
+        @include display(flex);
+        justify-content: space-between;
+        .form {
+          @include display(flex);
+          flex-direction: column;
+          max-width: 440px;
+          width: 100%;
+          .input-field {
+            width: 100%;
+            height: 45px;
+            background-color: transparent;
+            padding-left: 12px;
+            border: none;
+            outline: none;
+            @include border(1px, solid, $line-color);
+            @include text-property(14px, $playfair, $red, none);
+            @include transition(all, 300ms, ease);
+            &::placeholder {
+              @include text-property(14px, $playfair, $grey, $capit);
+            }
+            &:focus {
+              background-color: rgba(255, 0, 0, 0.1);
+              border: none;
+            }
+            &:first-child {
+              text-transform: $capit;
+            }
+            &:nth-child(2) {
+              margin: 20px 0;
+            }
+          }
+          .btn {
+            margin-top: 30px;
+            width: 120px;
+            height: 38px;
+            background-color: transparent;
+            border: none;
+            @include border(1px, solid, snow);
+            cursor: pointer;
+            @include text-property(15px, $playfair, $snow, $upper);
+            letter-spacing: 1px;
+            @include transition(all, 400ms, ease);
+            &:hover {
+              border-color: $red;
+              background-color: $red;
+            }
+          }
+        }
+        .article-box {
+          max-width: 555px;
+          width: 100%;
+          .paragraph {
+            @include text-property(16px, $poppins, $snow, none);
+            font-weight: $light;
+            line-height: 24px;
+            &:first-child {
+              margin-bottom: 25px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

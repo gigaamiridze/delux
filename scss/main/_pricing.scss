@@ -1,0 +1,78 @@
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+
+#Pricing {
+  background-color: $snow;
+  padding: 90px 0; 
+  .container {
+    @extend %container;
+    .buy-title {
+      @include text-property(48px, $playfair, $black, $capit);
+      font-weight: $bold;
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: 45px;
+    }
+    .flex-block {
+      @include display(flex);
+      @include flex-property(space-between, center);
+      .pricing-card {
+        max-width: 545px;
+        width: 100%;
+        padding: 24px;
+        .content-box {
+          width: 100%;
+          @include display(flex);
+          flex-direction: column;
+          align-items: center;
+          h3 {
+            @include text-property(24px, $playfair, $black, $capit);
+            font-weight: $bold;
+            line-height: 30px;
+            margin-top: 15px;
+          }
+          .price {
+            width: 82px;
+            height: 44px;
+            background-color: $light-red;
+            margin: 30px 0;
+            @include text-property(24px, $poppins, $red, none);
+            font-weight: $bold;
+            @include display(flex);
+            @include flex-property(center, center);
+          }
+          h5 {
+            @include text-property(18px, $playfair, $black, none);
+            font-weight: $bold;
+            line-height: 24px;
+          }
+          .paragraphs-box {
+            .paragraph {
+              @include display(flex);
+              @include flex-property(center, center);
+              margin: 25px 0;
+              span {
+                @include text-property(20px, $poppins, $black, none);
+                font-weight: $light;
+              }
+              p {
+                @include text-property(16px, $poppins, $black, none);
+                font-weight: $light;
+                margin-left: 5px;
+              }
+            }
+          }
+          .buy-btn {
+            @extend %buy-btn;
+            border: none;
+            margin-top: 25px;
+            .buy-link {
+              @extend %buy-link;
+            }
+          }
+        }
+      }
+    }
+  }
+}

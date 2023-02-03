@@ -1,0 +1,82 @@
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+
+#Agenda {
+  background-color: $black;
+  padding: 90px 0;
+  .container {
+    @extend %container;
+    .agenda-block {
+      .agenda-title {
+        @include text-property(48px, $playfair, $snow, none);
+        font-weight: $bold;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 45px;
+      }
+      .flex-block {
+        @include display(flex);
+        .timeline-box {
+          @include size(357px, 100%, 100%);
+          background-color: $brown;
+          padding: 15px 15px 40px 15px;
+          &:nth-child(2) {
+            margin: 0 20px;
+          }
+          .day {
+            @include text-property(16px, $playfair, $snow, $capit);
+            text-align: center;
+            margin-bottom: 10px;
+          }
+          .timeline-date {
+            @include text-property(18px, $playfair, $snow, $upper);
+            font-weight: $light;
+            text-align: center;
+            margin: 10px 0 30px 0;
+          }
+          .agenda-box {
+            height: 500px;
+            position: relative;
+            .vertical-line {
+              width: 0.7px;
+              height: 100%;
+              background-color: $line-color;
+              position: absolute;
+              left: 50%;
+            }
+            .agenda-content {
+              @include display(flex);
+              height: 80px;
+              padding-top: 10px;
+              .time {
+                @extend %agenda-box-title;
+                padding-right: 30px;
+              }
+              .quadrangle {
+                width: 16px;
+                height: 15px;
+                background-color: $red;
+                margin: 3px 0 50px 0;
+                z-index: 1;
+              }
+              .snow-color {
+                background-color: $snow;
+              }
+              .red-color {
+                background-color: $red;
+              }
+              .event {
+                @extend %agenda-box-title;
+                padding-left: 30px;
+              }
+            }
+          }
+          .change-height {
+            height: 400px;
+          }
+        }
+      }
+    }
+  }
+}

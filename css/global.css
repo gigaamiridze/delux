@@ -1,0 +1,1205 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead,
+tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, #Agenda .container, #Speakers .container, #About .flex-block .container, .first-section .container, .fixed-header .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .first-section .container .text-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, #Agenda .container, #Speakers .container, #About .flex-block .container, .first-section .container, .fixed-header .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .first-section .container .text-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fixed-header {
+  position: fixed;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+}
+.fixed-header .container .flex-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 68px;
+}
+.fixed-header .container .flex-block .logo {
+  max-width: 105px;
+  width: 100%;
+  height: 30px;
+}
+.fixed-header .container .flex-block .flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fixed-header .container .flex-block .flex-box nav {
+  margin-right: 10px;
+}
+.fixed-header .container .flex-block .flex-box nav ul {
+  display: flex;
+}
+.fixed-header .container .flex-block .flex-box nav ul li .nav-link {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: none;
+  padding: 10px;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+.fixed-header .container .flex-block .flex-box nav ul li .nav-link:hover {
+  background-color: red;
+}
+.fixed-header .container .flex-block .flex-box nav ul li .nav-link.active {
+  background-color: red;
+}
+.fixed-header .container .flex-block .flex-box .buy-btn {
+  border: none;
+}
+.active {
+  background-color: snow;
+}
+
+.active .nav-link {
+  color: #150303 !important;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, #Agenda .container, #Speakers .container, #About .flex-block .container, .first-section .container, .fixed-header .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .first-section .container .text-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.first-section {
+  position: relative;
+  background-color: #150303;
+  height: 100vh;
+}
+.first-section .container .text-box {
+  position: absolute;
+  max-width: 380px;
+  width: 100%;
+  top: 27%;
+}
+.first-section .container .text-box .large-logo {
+  max-width: 365px;
+  width: 100%;
+  height: 105px;
+}
+.first-section .container .text-box .date-and-location {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 16px 0;
+  letter-spacing: 4px;
+}
+.first-section .container .text-box .delux-paragraph {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+.first-section .container .text-box .buy-btn {
+  border-width: 1px;
+  border-style: solid;
+  border-color: snow;
+}
+.first-section .container .text-box .buy-btn:hover {
+  border-color: red;
+}
+.first-section .container .video-box {
+  position: absolute;
+  top: 0;
+  left: auto;
+  bottom: 0;
+  right: 0;
+  max-width: 60%;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  overflow: hidden;
+  opacity: 0.65;
+}
+.first-section .container .video-box .poster {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, #Agenda .container, #Speakers .container, #About .flex-block .container, .fixed-header .container, .first-section .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#About {
+  background-color: snow;
+  padding-top: 60px;
+}
+#About .flex-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#About .flex-block .about-img {
+  max-width: 44%;
+  width: 100%;
+}
+#About .flex-block .container .about-content {
+  max-width: 527px;
+  width: 100%;
+  height: 100%;
+}
+#About .flex-block .container .about-content .title {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 60px;
+}
+#About .flex-block .container .about-content .paragraph {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 30px;
+  margin: 20px 0;
+}
+#About .flex-block .container .about-content .watch-btn {
+  position: relative;
+  max-width: 128px;
+  width: 100%;
+  height: 44px;
+  background-color: transparent;
+  border: none;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#About .flex-block .container .about-content .watch-btn:hover {
+  background-color: red;
+}
+#About .flex-block .container .about-content .watch-btn .link {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  color: red;
+  text-transform: capitalize;
+  font-weight: 500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: all;
+  transition-duration: 450ms;
+  transition-timing-function: ease;
+}
+#About .flex-block .container .about-content .watch-btn .link:hover {
+  color: snow;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, #Agenda .container, #Speakers .container, .fixed-header .container, .first-section .container, #About .flex-block .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#Speakers {
+  position: relative;
+  background-color: snow;
+  padding: 90px 0;
+}
+#Speakers .shape-box {
+  position: absolute;
+  top: 93px;
+  right: 0;
+}
+#Speakers .shape-box .speaker-shape {
+  height: 500px;
+}
+#Speakers .container .flex-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Speakers .container .flex-block .speakers-content {
+  max-width: 365px;
+  width: 100%;
+  height: 100%;
+}
+#Speakers .container .flex-block .speakers-content .title {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 60px;
+}
+#Speakers .container .flex-block .speakers-content .paragraph {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 30px;
+}
+#Speakers .container .flex-block .speakers-content .paragraph:first-of-type {
+  margin: 20px 0 30px 0;
+}
+#Speakers .container .flex-block .speakers-block {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+#Speakers .container .flex-block .speakers-block .flex-block {
+  display: flex;
+  justify-content: flex-end;
+}
+#Speakers .container .flex-block .speakers-block .flex-block:first-child {
+  margin-bottom: 20px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box {
+  max-width: 213px;
+  width: 100%;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box:nth-of-type(2) {
+  margin: 0 16px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .speaker-name {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #150303;
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 20px;
+  padding: 10px 0 7px 0;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .change-padd {
+  padding-bottom: 5px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .webflow {
+  width: 62px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .zapier {
+  width: 49px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .slack {
+  width: 54px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .stripe {
+  width: 40px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .facebook {
+  width: 60px;
+}
+#Speakers .container .flex-block .speakers-block .flex-block .speaker-box .speaker-name-and-company .mailchimp {
+  width: 72px;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, #Agenda .container, .fixed-header .container, .first-section .container, #About .flex-block .container, #Speakers .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#Agenda {
+  background-color: #150303;
+  padding: 90px 0;
+}
+#Agenda .container .agenda-block .agenda-title {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+#Agenda .container .agenda-block .flex-block {
+  display: flex;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box {
+  max-width: 357px;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0deg, 100%, 99%, 0.03);
+  padding: 15px 15px 40px 15px;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box:nth-child(2) {
+  margin: 0 20px;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .day {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .timeline-date {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box {
+  height: 500px;
+  position: relative;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .vertical-line {
+  width: 0.7px;
+  height: 100%;
+  background-color: hsla(0deg, 100%, 99%, 0.3);
+  position: absolute;
+  left: 50%;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content {
+  display: flex;
+  height: 80px;
+  padding-top: 10px;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time {
+  padding-right: 30px;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .quadrangle {
+  width: 16px;
+  height: 15px;
+  background-color: red;
+  margin: 3px 0 50px 0;
+  z-index: 1;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .snow-color {
+  background-color: snow;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .red-color {
+  background-color: red;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event {
+  padding-left: 30px;
+}
+#Agenda .container .agenda-block .flex-block .timeline-box .change-height {
+  height: 400px;
+}
+
+footer .container, #Contact .container, #FAQs .container, #Pricing .container, .fixed-header .container, .first-section .container, #About .flex-block .container, #Speakers .container, #Agenda .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn, .fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover, .fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover {
+  background-color: red;
+}
+
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link, .fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#Pricing {
+  background-color: snow;
+  padding: 90px 0;
+}
+#Pricing .container .buy-title {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+#Pricing .container .flex-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#Pricing .container .flex-block .pricing-card {
+  max-width: 545px;
+  width: 100%;
+  padding: 24px;
+}
+#Pricing .container .flex-block .pricing-card .content-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Pricing .container .flex-block .pricing-card .content-box h3 {
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 15px;
+}
+#Pricing .container .flex-block .pricing-card .content-box .price {
+  width: 82px;
+  height: 44px;
+  background-color: rgba(255, 0, 0, 0.2);
+  margin: 30px 0;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: red;
+  text-transform: none;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Pricing .container .flex-block .pricing-card .content-box h5 {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 24px;
+}
+#Pricing .container .flex-block .pricing-card .content-box .paragraphs-box .paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+#Pricing .container .flex-block .pricing-card .content-box .paragraphs-box .paragraph span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 300;
+}
+#Pricing .container .flex-block .pricing-card .content-box .paragraphs-box .paragraph p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 300;
+  margin-left: 5px;
+}
+#Pricing .container .flex-block .pricing-card .content-box .buy-btn {
+  border: none;
+  margin-top: 25px;
+}
+footer .container, #Contact .container, #FAQs .container, .fixed-header .container, .first-section .container, #About .flex-block .container, #Speakers .container, #Agenda .container, #Pricing .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+.fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn, #Pricing .container .flex-block .pricing-card .content-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+.fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover, #Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover {
+  background-color: red;
+}
+
+.fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link, #Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#FAQs {
+  background-color: snow;
+  padding: 90px 0;
+  position: relative;
+  overflow-x: hidden;
+}
+#FAQs .container .FAQs-content h2 {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 60px;
+}
+#FAQs .container .FAQs-content .faq-wrapper {
+  padding-top: 30px;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-question {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-question .plus-box {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-question .plus-box .plus {
+  background-color: red;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-question .plus-box .plus:first-child {
+  background-color: red;
+  width: 5px;
+  height: 20px;
+  position: absolute;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-question .plus-box .plus:last-child {
+  background-color: red;
+  width: 100%;
+  height: 5px;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-question p {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 700;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-answer {
+  max-width: 666px;
+  width: 100%;
+  margin: 20px 0;
+  display: none;
+}
+#FAQs .container .FAQs-content .faq-wrapper .faq-answer p {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #150303;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 25px;
+  width: 100%;
+}
+#FAQs .container .faq-shape {
+  max-width: 40%;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  right: -50px;
+}
+
+footer .container, #Contact .container, .fixed-header .container, .first-section .container, #About .flex-block .container, #Speakers .container, #Agenda .container, #Pricing .container, #FAQs .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+.fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn, #Pricing .container .flex-block .pricing-card .content-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+.fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover, #Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover {
+  background-color: red;
+}
+
+.fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link, #Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+#Contact {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+#Contact .container .contact-box {
+  padding-top: 110px;
+}
+#Contact .container .contact-box .red-text {
+  font-size: 18px;
+  font-family: "Playfair Display", serif;
+  color: red;
+  text-transform: none;
+  line-height: 24px;
+}
+#Contact .container .contact-box .contact-title {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 60px;
+  margin: 10px 0 42px 0;
+}
+#Contact .container .contact-box .horizontal-block {
+  display: flex;
+  justify-content: space-between;
+}
+#Contact .container .contact-box .horizontal-block .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 440px;
+  width: 100%;
+}
+#Contact .container .contact-box .horizontal-block .form .input-field {
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  padding-left: 12px;
+  border: none;
+  outline: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: hsla(0deg, 100%, 99%, 0.3);
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: red;
+  text-transform: none;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+#Contact .container .contact-box .horizontal-block .form .input-field::placeholder {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: rgb(155, 155, 155);
+  text-transform: capitalize;
+}
+#Contact .container .contact-box .horizontal-block .form .input-field:focus {
+  background-color: rgba(255, 0, 0, 0.1);
+  border: none;
+}
+#Contact .container .contact-box .horizontal-block .form .input-field:first-child {
+  text-transform: capitalize;
+}
+#Contact .container .contact-box .horizontal-block .form .input-field:nth-child(2) {
+  margin: 20px 0;
+}
+#Contact .container .contact-box .horizontal-block .form .btn {
+  margin-top: 30px;
+  width: 120px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: snow;
+  cursor: pointer;
+  font-size: 15px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition-property: all;
+  transition-duration: 400ms;
+  transition-timing-function: ease;
+}
+#Contact .container .contact-box .horizontal-block .form .btn:hover {
+  border-color: red;
+  background-color: red;
+}
+#Contact .container .contact-box .horizontal-block .article-box {
+  max-width: 555px;
+  width: 100%;
+}
+#Contact .container .contact-box .horizontal-block .article-box .paragraph {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  line-height: 24px;
+}
+#Contact .container .contact-box .horizontal-block .article-box .paragraph:first-child {
+  margin-bottom: 25px;
+}
+
+footer .container, .fixed-header .container, .first-section .container, #About .flex-block .container, #Speakers .container, #Agenda .container, #Pricing .container, #FAQs .container, #Contact .container {
+  max-width: 1112px;
+  margin: 0 auto;
+}
+
+.fixed-header .container .flex-block .flex-box .buy-btn, .first-section .container .text-box .buy-btn, #Pricing .container .flex-block .pricing-card .content-box .buy-btn {
+  position: relative;
+  width: 160px;
+  height: 38px;
+  background-color: #150303;
+  transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease;
+}
+.fixed-header .container .flex-block .flex-box .buy-btn:hover, .first-section .container .text-box .buy-btn:hover, #Pricing .container .flex-block .pricing-card .content-box .buy-btn:hover {
+  background-color: red;
+}
+
+.fixed-header .container .flex-block .flex-box .buy-btn .buy-link, .first-section .container .text-box .buy-btn .buy-link, #Pricing .container .flex-block .pricing-card .content-box .buy-btn .buy-link {
+  font-size: 14px;
+  font-family: "Playfair Display", serif;
+  color: snow;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .time, #Agenda .container .agenda-block .flex-block .timeline-box .agenda-box .agenda-content .event {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+  text-align: center;
+  line-height: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+footer {
+  background-color: #150303;
+}
+footer .container .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+}
+footer .container .footer-content .footer-logo {
+  max-width: 105px;
+  width: 100%;
+  height: 30%;
+}
+footer .container .footer-content p {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: none;
+  font-weight: 300;
+}
+footer .container .footer-content p .author {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: snow;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+footer .container .footer-content .social-icons a:nth-child(2) {
+  margin: 0 25px;
+}
+footer .container .footer-content .social-icons a .soc-icon {
+  font-size: 25px;
+  color: snow;
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+footer .container .footer-content .social-icons a .soc-icon:hover {
+  color: red;
+}

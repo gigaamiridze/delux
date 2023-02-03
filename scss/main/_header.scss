@@ -1,0 +1,64 @@
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.fixed-header {
+  position: fixed;
+  background-color: transparent;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  @include transition(all, 500ms, ease-in-out);
+  .container {
+    @extend %container;
+    .flex-block {
+      @include display(flex);
+      @include flex-property(space-between, center);
+      height: 68px;
+      .logo {
+        @include size(105px, 100%, 30px);
+      }
+      .flex-box {
+        @include display(flex);
+        @include flex-property(space-between, center);
+        nav {
+          margin-right: 10px;  
+          ul {
+            @include display(flex);
+            li {
+              .nav-link {
+                @include text-property(16px, $playfair, $snow, none);
+                padding: 10px;
+                @include transition(all, 350ms, ease);
+                &:hover {
+                  background-color: $red;
+                }
+                &.active {
+                  background-color: $red;
+                }
+              }
+            }
+          }
+        }
+        .buy-btn {
+          @extend %buy-btn;
+          border: none;
+          .buy-link {
+            @extend %buy-link;
+          }
+        }
+      }
+    }
+  }
+}
+.active {
+  background-color: $snow;
+}
+.active .nav-link {
+  color: $black !important;
+}

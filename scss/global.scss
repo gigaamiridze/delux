@@ -1,0 +1,18 @@
+// Importing fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+// Importing scss files
+@import "./base/reset";
+@import "./modules/variables";
+@import "./modules/classes";
+@import "./modules/mixins";
+@import "./main/header";
+@import "./main/first-section";
+@import "./main/about";
+@import "./main/speakers";
+@import "./main/agenda";
+@import "./main/pricing";
+@import "./main/faqs";
+@import "./main/contact";
+@import "./main/footer";

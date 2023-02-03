@@ -1,0 +1,47 @@
+@import "./variables";
+@import "./mixins";
+
+%container {
+	max-width: 1112px;
+	margin: 0 auto;
+}
+
+%buy-btn {
+	position: relative;
+	width: 160px;
+	height: 38px;
+	background-color: $black;
+	@include transition(all, 350ms, ease);
+	&:hover {
+		background-color: $red;
+	}
+}
+
+%buy-link {
+	@include text-property(14px, $playfair, $snow, $upper);
+	letter-spacing: 1px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	@include display(flex);
+	@include flex-property(center, center);
+}
+
+%center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); 
+}
+
+// Agenda box's time and event titles
+%agenda-box-title {
+	@include text-property(14px, $poppins, $snow, none);
+	font-weight: $light;
+	text-align: center;
+	line-height: 20px;
+	width: 50%;
+	margin-bottom: 50px;
+}

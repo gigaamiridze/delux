@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Delux Landing Page">
+    <meta name="keywords" content="Delux, Landing Page, HTML, CSS, SASS, SCSS, JavaScript">
+    <meta name="author" content="justtfelix">
+    <script src="https://kit.fontawesome.com/f235961b72.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/gif" href="images/icon.svg" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <title>Delux</title>
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div class="container">
+        <div class="flex-block">
+          <a href="index.html">
+              <img src="./images/logos/delux.png" class="logo" alt="Delux">
+          </a>
+          <div class="flex-box">
+            <nav>
+              <ul>
+                <li>
+                  <a class="nav-link About" href="#About">About</a>
+                </li>
+                <li>
+                  <a class="nav-link Speakers" href="#Speakers">Speakers</a>
+                </li>
+                <li>
+                  <a class="nav-link Agenda" href="#Agenda">Agenda</a>
+                </li>
+                <li>
+                  <a class="nav-link FAQs" href="#FAQs">FAQs</a>
+                </li>
+                <li>
+                  <a class="nav-link Contact" href="#Contact">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <button type="button" class="buy-btn">
+              <a class="buy-link Pricing" href="#Pricing">Buy Tickets</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="first-section">
+      <div class="container">
+        <div class="text-box">
+          <img src="./images/logos/delux-white.png" class="large-logo" alt="Delux">
+          <p class="date-and-location">May 10-12,2020 | New York, NY</p>
+          <p class="delux-paragraph">Delux is a gathering for thought leaders, inventors and tech entrepreneurs.</p>
+          <button type="button" class="buy-btn">
+            <a class="buy-link" href="#Pricing">Buy Tickets</a>
+          </button>
+        </div>
+        <div class="video-box">
+          <video autoplay muted loop class="poster" style="background-image: url(/images/poster.jpg);">
+            <source src="./videos/new-york.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <section id="About">
+      <div class="flex-block">
+        <img src="./images/shapes/delux.png" class="about-img" alt="Delux shape">
+        <div class="container">
+          <div class="about-content">
+            <h3 class="title">What is Delux?</h3>
+            <p class="paragraph">Delux is a gathering for thought leaders, inventors and tech entrepreneurs in the heart of NYC. 12th year running, this conference covers all things digital and innovation.</p>
+            <button type="button" class="watch-btn">
+              <a class="link" href="#">watch video</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Speakers">
+      <div class="shape-box">
+        <img src="./images/shapes/speaker-shape.png" class="speaker-shape" alt="Delux">
+      </div>
+      <div class="container">
+        <div class="flex-block">
+          <div class="speakers-content">
+            <h2 class="title">highlight speakers</h2>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <p class="paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          </div>
+          <div class="speakers-block">
+            <div class="flex-block">
+              <div class="speaker-box">
+                <img src="./images/persons/maddison.jpg" class="speaker-img" alt="Maddison Niels">
+                <div class="speaker-name-and-company">
+                  <h4 class="speaker-name">maddison niels</h4>
+                  <img src="./images/logos/webflow.png" class="webflow" alt="Webflow">
+                </div>
+              </div>
+              <div class="speaker-box">
+                <img src="./images/persons/david.jpg" class="speaker-img" alt="David May">
+                <div class="speaker-name-and-company">
+                  <h4 class="speaker-name change-padd">david may</h4>
+                  <img src="./images/logos/zapier.png" class="zapier" alt="Zapier">
+                </div>
+              </div>
+              <div class="speaker-box">
+                <img src="./images/persons/rachel.jpg" class="speaker-img" alt="Rachel Robbins">
+                <div class="speaker-name-and-company">
+                  <h4 class="speaker-name">rachel robbins</h4>
+                  <img src="./images/logos/slack.png" class="slack" alt="Slack">
+                </div>
+              </div>
+            </div>
+            <div class="flex-block">
+              <div class="speaker-box">
+                <img src="./images/persons/matthew.jpg" class="speaker-img" alt="Matthew Riley">
+                <div class="speaker-name-and-company">
+                  <h4 class="speaker-name">matthew riley</h4>
+                  <img src="./images/logos/stripe.png" class="stripe" alt="Stripe">
+                </div>
+              </div>
+              <div class="speaker-box">
+                <img src="./images/persons/jason.jpg" class="speaker-img" alt="Jason Nuke">
+                <div class="speaker-name-and-company">
+                  <h4 class="speaker-name change-padd">jason nuke</h4>
+                  <img src="./images/logos/facebook.png" class="facebook" alt="Facebook">
+                </div>
+              </div>
+              <div class="speaker-box">
+                <img src="./images/persons/brian.jpg" class="speaker-img" alt="Brian Day">
+                <div class="speaker-name-and-company">
+                  <h4 class="speaker-name">brian day</h4>
+                  <img src="./images/logos/mailchimp.png" class="mailchimp" alt="Mailchimp">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Agenda">
+      <div class="container">
+        <div class="agenda-block">
+          <h2 class="agenda-title">Agenda at a glance</h2>
+          <div class="flex-block">
+            <div class="timeline-box">
+              <p class="day">day 1</p>
+              <p class="timeline-date">Wednesday, March 10th</p>
+              <div class="agenda-box">
+                <div class="vertical-line"></div>
+                <div class="agenda-content">
+                  <span class="time">9:00 am</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Registration</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">12:00 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Lunch & Activities</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">1:00 pm</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Sessions begin</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">3:00 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Breakout Workshops</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">5:30 pm</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Cocktail Hour begins</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">6:30 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Dinner</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-box">
+              <p class="day">day 2</p>
+              <p class="timeline-date">Thursday, March 11th</p>
+              <div class="agenda-box change-height">
+                <div class="vertical-line"></div>
+                <div class="agenda-content">
+                  <span class="time">8:00 am</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Breakfast & Networking</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">9:00 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Sessions begin</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">12:00 pm</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Lunch</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">4:00 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Sessions end</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">6:00 pm</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Closing Party</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-box">
+              <p class="day">day 3</p>
+              <p class="timeline-date">Friday, March 12th</p>
+              <div class="agenda-box">
+                <div class="vertical-line"></div>
+                <div class="agenda-content">
+                  <span class="time">8:00 am</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Breakfast & Networking</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">9:00 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Sessions begin</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">12:00 pm</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Lunch</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">4:00 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Sessions end</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">6:00 pm</span>
+                  <div class="quadrangle"></div>
+                  <p class="event">Closing Party</p>
+                </div>
+                <div class="agenda-content">
+                  <span class="time">6:30 pm</span>
+                  <div class="quadrangle snow-color"></div>
+                  <p class="event">Dinner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Pricing">
+      <div class="container">
+        <h2 class="buy-title">buy tickets</h2>
+        <div class="flex-block">
+          <div class="pricing-card">
+            <div class="content-box">
+              <h3>general admission</h3>
+              <div class="price">$379</div>
+              <h5>What's included?</h5>
+              <div class="paragraphs-box">
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn">
+                <a class="buy-link Pricing" href="#Pricing">Buy Tickets</a>
+              </button>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <div class="content-box">
+              <h3 class="title">all access</h3>
+              <div class="price">$589</div>
+              <h5>What's included?</h5>
+              <div class="paragraphs-box">
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="paragraph">
+                  <span>✓</span>
+                  <p>Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+              <button type="button" class="buy-btn">
+                <a class="buy-link Pricing" href="#Pricing">Buy Tickets</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="FAQs">
+      <div class="container">
+        <div class="FAQs-content">
+          <h2>FAQs</h2>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>How many usually attended Delux?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Lorem ipsum dolor sit amet?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Lorem ipsum dolor sit amet?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Sed do eiusmod tempor incididunt?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. sed do eiusmod tempor incididunt. sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Lorem ipsum dolor sit amet?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Sed do eiusmod tempor incididunt?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. sed do eiusmod tempor incididunt. sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Sed do eiusmod tempor incididunt?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. sed do eiusmod tempor incididunt. sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-question">
+              <div class="plus-box">
+                <div class="plus"></div>
+                <div class="plus"></div>
+              </div>
+              <p>Sed do eiusmod tempor incididunt?</p>
+            </div>
+            <div class="faq-answer">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In nisl nisi scelerisque eu ultrices vitae auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. sed do eiusmod tempor incididunt. sed do eiusmod tempor incididunt.</p>
+            </div>
+          </div>
+        </div>
+        <img src="./images/shapes/faq-shape.png" class="faq-shape" alt="FAQ Shape">
+      </div>
+    </section>
+    <section id="Contact" style="background-image: url(./images/new-york-city.jpg);">
+      <div class="container">
+        <div class="contact-box">
+          <p class="red-text">Got other questions?</p>
+          <h2 class="contact-title">contact us</h2>
+          <div class="horizontal-block">
+            <form class="form">
+              <input type="text" class="input-field" name="fullName" id="fullName" placeholder="full name" required>
+              <input type="email" class="input-field" name="email" id="email" placeholder="email" required>
+              <input type="text" class="input-field" name="phoneNumber" id="phoneNumber" placeholder="phone" required>
+              <button type="submit" class="btn">submit</button>
+            </form>
+            <div class="article-box">
+              <p class="paragraph">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+              <p class="paragraph">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <img class="footer-logo" src="images/logos/delux-white.png" alt="Delux logo">
+          <p>Created by <a class="author" href="https://github.com/gigaamiridze" target="_blank">giga amiridze</a></p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fa-brands fa-facebook-square soc-icon"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fa-brands fa-instagram soc-icon"></i>
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+              <i class="fa-brands fa-twitter soc-icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/change-navbar.js"></script>
+    <script src="./js/menu-highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+
+#About {
+  background-color: $snow;
+  padding-top: 60px;
+  .flex-block {
+    @include display(flex);
+    justify-content: space-between;
+    align-items: center;
+    .about-img {
+      max-width: 44%;
+      width: 100%;
+    }
+    .container {
+      @extend %container;
+      .about-content {
+        @include size(527px, 100%, 100%);
+        .title {
+          @include text-property(48px, $playfair, $black, none);
+          font-weight: $bold;
+          line-height: 60px;
+        }
+        .paragraph {
+          @include text-property(18px, $poppins, $black, none);
+          font-weight: $light;
+          line-height: 30px;
+          margin: 20px 0;
+        }
+        .watch-btn {
+          position: relative;
+          @include size(128px, 100%, 44px);
+          background-color: transparent;
+          border: none;
+          @include transition(all, 350ms, ease);
+          &:hover {
+            background-color: $red;
+          }
+          .link {
+            @include text-property(20px, $playfair, $red, $capit);
+            font-weight: $medium;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            @include display(flex);
+            @include flex-property(center, center);
+            @include transition(all, 450ms, ease);
+            &:hover {
+              color: $snow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

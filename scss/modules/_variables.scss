@@ -1,0 +1,26 @@
+// Text transforms
+$upper: uppercase;
+$lower: lowercase;
+$capit: capitalize;
+
+// Colors
+$white: #FFFFFF;
+$snow: snow;
+$black: #150303;
+$red: red;
+$brown: hsla(0, 100%, 99%, 0.03);
+$line-color: hsla(0, 100%, 99%, 0.3);
+$light-red: rgba(255, 0, 0, 0.2);
+$grey: rgb(155, 155, 155);
+
+// Fonts
+$playfair: 'Playfair Display', serif;
+$poppins: 'Poppins', sans-serif;
+
+// Font weights
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semiBold: 600;
+$bold: 700;
+$extraBold: 800;

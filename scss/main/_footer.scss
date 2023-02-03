@@ -1,0 +1,41 @@
+@import "../modules/variables";
+@import "../modules/classes";
+@import "../modules/mixins";
+
+footer {
+  background-color: $black;
+  .container {
+    @extend %container;
+    .footer-content {
+      @include display(flex);
+      @include flex-property(space-between, center);
+      padding: 25px 0;
+      .footer-logo {
+        @include size(105px, 100%, 30%);
+      }
+      p {
+        @include text-property(14px, $poppins, $snow, none);
+        font-weight: $light;
+        .author {
+          @include text-property(14px, $poppins, $snow, $capit);
+          font-weight: $medium;
+        }
+      }
+      .social-icons {
+        a {
+          &:nth-child(2) {
+            margin: 0 25px;
+          }
+          .soc-icon {
+            font-size: 25px;
+            color: $snow;
+            @include transition(all, 300ms, ease);
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
